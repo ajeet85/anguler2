@@ -12,6 +12,10 @@ import { DatabindingAjComponent } from './databinding-aj/databinding-aj.componen
 import { MyPipesComponent } from './my-pipes/my-pipes.component';
 import { ReversePipe } from './reverse.pipe';
 import { Ng2OrderModule } from 'ng2-order-pipe';
+import { ParentComponent } from './inheritance/parent.component';
+import { ChildComponent } from './inheritance/child.component';
+
+
 
 @NgModule({
   declarations: [
@@ -22,6 +26,10 @@ import { Ng2OrderModule } from 'ng2-order-pipe';
     DatabindingAjComponent,
     MyPipesComponent,
     ReversePipe,
+    ParentComponent,
+    ChildComponent,
+   
+   
 
   ],
   imports: [
