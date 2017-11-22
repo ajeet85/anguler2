@@ -1,0 +1,37 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+  
+</div>
+
+<div class="navbar navbar-default">
+  <a class="navbar-brand" [routerLink]="['/']">Title</a>
+  <ul class="nav navbar-nav">
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+      <a [routerLink]="['/contatcus']">Contact US</a>
+    </li>
+  
+     <li routerLinkActive="active">
+      <a [routerLink]="['/aboutus']">About us</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/aboutus1/4/abc']">About us1</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/databind']">Databind</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/my-pipes']">Pipes</a>
+    </li>
+  </ul>
+</div>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+
+
+

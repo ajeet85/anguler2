@@ -1,0 +1,19 @@
+<p>
+  aboutus works!
+</p>
+<div class="navbar navbar-default">
+  <a class="navbar-brand" [routerLink]="['/']">Title</a>
+  <ul class="nav navbar-nav">
+     
+  
+     <li routerLinkActive="active">
+      <a [routerLink]="['/aboutus1',{outlets:{test:[aboutus1]}}]">About us1</a>
+
+      
+    </li>
+  </ul>
+</div>
+
+<div class="container123">
+  <router-outlet name="test"></router-outlet>
+</div>

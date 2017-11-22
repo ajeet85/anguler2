@@ -1,0 +1,54 @@
+<p>
+  my-pipes works!
+</p>
+
+
+<h2>Pipe</h2>
+
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+    	<th>index</th>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Salary</th>
+      <th>Joining</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<tr *ngFor="let item of employees | orderBy:'salary':true let i = index">
+  		<td>{{i}}</td>
+      <td>{{item.name | uppercase}}</td>
+      <td>{{item.address | lowercase | reverse}}</td>
+      <td>{{item.salary | currency:'INR'}}</td>
+      <td>{{item.joining | date:'dd/MM/yyyy'}}</td>
+    </tr>
+    </tbody>
+ </table>   
+<table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+    <th>No</th>
+      <th>Brand</th>
+      <th>Capacity</th>
+    </tr>
+    <tr>
+    	<td>Costom</td>
+    	<td>{{engine[0].brand}}</td>
+    	<td>{{engine[0].capcity}}</td>
+    </tr>
+    <tr>
+    	<td>Costom</td>
+    	<td>{{engine[1].brand}}</td>
+    	<td>{{engine[1].capcity}}</td>
+    </tr>
+    <tr *ngFor="let item1 of engine  let i = index">
+  		<td>{{i}}</td>
+      <td>{{item1.brand | uppercase}}</td>
+      <td>{{item1.capcity | lowercase | reverse}}</td>
+      
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
